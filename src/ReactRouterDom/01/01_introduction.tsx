@@ -1,0 +1,19 @@
+import React from 'react';
+import {NavLink, Route, Routes} from "react-router-dom";
+
+export const Introduction = () => {
+    return (
+        <div>
+            <NavLink to={`/`}> main</NavLink>
+            <NavLink to={`/login`}> login</NavLink>
+            <NavLink to={`/profile`}> profile</NavLink>
+
+            <Routes>
+                <Route path={`/`} element={<div> main</div>}/>
+                <Route path={`/login`} element={<div> login</div>}/>
+                <Route path={`/profile`} element={<div> profile</div>}/>
+            </Routes>
+
+        </div>
+    );
+};
